@@ -1,0 +1,419 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+.container{
+    
+padding: 0rem 0rem;
+
+display: flex;
+flex-direction: column;
+width: 100%;
+height: auto;
+background-color: white;
+
+
+}
+.logo {
+    width: 72px;
+    height: 52px;
+  
+}
+.icones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.animore{
+    width: 142px;
+    height: 37px;
+    filter: saturate(1.5);
+    
+
+}
+.navbar{
+    z-index: 10000;
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 20rem;
+position: fixed;
+width: 100vw;
+height: 80px;
+padding: 0 122px;
+background-color: rgba(255, 255, 255, 0.331);
+backdrop-filter: blur(4px);
+scroll-margin-top: .8em;
+
+
+}
+a {
+    color: rgb(11, 2, 60);
+font-weight: 500;
+text-decoration: none;
+}
+.texto-caixa {
+    border-radius: 20px;
+    background-color: #ffffff57;
+    padding: 4rem 5rem;
+    width: 50%;
+    height: 400px;
+    margin-top: 4rem;
+    backdrop-filter: blur(10px);
+    border: 0.5px solid #ffff;
+    
+}
+@keyframes alter{
+    0% {
+        
+    }
+    25%{
+        transform: translate(-72px, 132px);
+        
+       
+    }
+    50%{
+        transform: translate(-144px, 50px);
+        width: 150px;
+        height: 150px;
+        
+       
+    }
+    75%{
+        transform: translate(-182px, 20px);
+        
+       
+    }
+    100%{
+        transform: translate(-160px, 70px);
+        width: 250px;
+        height: 250px;
+       
+    }
+}
+@keyframes alter-2{
+    from {
+        
+    }
+    to {
+        transform: rotate(45deg);
+           
+    }
+}
+@keyframes alter-3{
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    80% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes alter-4{
+    from {
+        filter: saturate(1);
+    }
+    to {
+        filter: saturate(2);
+    }
+}
+.pata1{
+    width: 250x;
+    height: 250px;
+    position: absolute;
+    top: 100px;
+    left: 125px;
+    animation-name: alter-2;
+    animation-duration: 7s;
+  animation-direction:alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+ 
+}
+.pata2{
+    width: 250x;
+    height: 250px;
+    position: absolute;
+    top: 380px;
+    right: 125px;
+    z-index: 20;
+    animation-name: alter-3;
+    animation-duration: 5s;
+   
+  animation-direction:alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.circulo{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50px;
+    right: 140px;
+    animation-name: alter;
+    animation-duration: 60s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+ 
+}
+.ovo{
+    
+    width: 180x;
+    height: 180px;
+    position: absolute;
+    top: 450px;
+    left: 115px;
+    z-index: 20;
+    animation-name: alter-4;
+    animation-duration: 3s;
+  animation-direction:alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+ 
+
+}
+.titulo {
+   
+    font-size: 100px;
+    color: rgba(20, 28, 50, 1);
+    font-family: 'Bebas Neue', cursive;
+    
+   
+
+}
+.subtitulo{
+    font-size: 50px;
+    color: rgba(20, 28, 50, 1);
+    font-family: 'Bebas Neue', cursive;
+
+}
+.item-nav{
+    display: flex;
+    width: auto;
+    font-size: 22px;
+    font-weight: 600;
+    gap: 4rem;
+
+}
+.divisao{
+width: 100%;
+height: 100vh;
+background-color: rgb(206, 195, 180);
+display: flex;
+align-items: center;
+justify-content: center;
+align-content: center;
+
+}
+
+.divisao2{
+    width: 100%;
+    height: 100vh;
+    background-color:  rgb(220, 210, 197);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 144px 0 144px;
+    
+    }
+    .textos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .divisao3{
+        width: 100%;
+        height: 100vh;
+        background-image: url("https://cdn.pixabay.com/photo/2018/10/01/09/21/pets-3715733_960_720.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-position: 50% 70%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        
+        }
+        .divisao3::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 8;
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, rgb(0, 0, 0) 100%);
+        }
+
+        .caixa-texto {
+         display: flex;
+         align-items:flex-start;
+         flex-direction: column;
+         width: 100%;
+         gap: 1rem;
+          
+        }
+        .caixa1{
+          width: 35%;
+          height: 500px;
+         display: flex;
+         flex-direction: column;
+        
+         
+         
+         }
+        .caixa2{
+            width: 35%;
+            height: 500px;
+            margin-left: 2rem;
+            display: flex;
+            flex-direction: column;
+           
+        }
+
+.titulo.one{
+    font-size: 152px;
+    color: white;
+    z-index: 10;
+}
+        .h1-animore {
+            color: rgba(20, 28, 50, 1);
+    font-family: 'Bebas Neue', cursive;
+            font-size: 70px;
+           
+
+           
+        
+        }
+        .texto-animore1{
+            font-size: 24px;
+            color: rgba(20, 28, 50, 1);
+            font-family: 'Sora', sans-serif;
+            text-align: justify;
+  text-justify: inter-word;
+           
+        
+        
+        }
+        .texto-animore2{
+            font-size: 24px;
+            color: rgba(20, 28, 50, 1);
+            font-family: 'Sora', sans-serif;
+            text-align: justify;
+  text-justify: inter-word;    
+        }
+    
+        .cachorro{
+            width: 100% ;
+            height: 100vh;
+            
+
+        }
+
+        .faixa-texto{
+            width: 40%;
+            height: 600px;
+            background-color: rgba(74, 73, 73, 0.054);
+            position: absolute;
+            justify-content: center;
+            backdrop-filter: blur(2px);
+            margin-left:40px ;
+            border-radius: 15px;
+            align-items: center;
+
+         }
+
+         .texto-faixa {
+           
+            font-size: 100px;
+            color: rgb(11, 2, 60);
+            font-family: 'Fjalla One', sans-serif;
+            justify-content: center;
+             align-items: center;
+            text-align: center;
+            margin: 0;
+ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+        
+            
+        }
+
+
+        .divisao4{
+            width: 100%;
+            height: 100vh;
+            background-color:  rgb(220, 210, 197);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+     }     
+     
+     .icone{
+        height: 200px;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+     }
+     .icone1{
+        height: 200px;
+        width: 260px;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+     }
+     .icone2{
+        height: 200px;
+        width: 210px;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+     }
+     .icone3{
+        height: 200px;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+     }
+     
+
+
+
+         
+
+
+
+
+
+
